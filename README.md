@@ -23,7 +23,7 @@ A modern, responsive WebSocket chat interface built with **Next.js 13 App Router
 Clone the repo and run it locally:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/chat-app.git
+git clone https://github.com/kvchi/websocket-chat-app.git
 cd chat-app
 npm install
 npm run dev
