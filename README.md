@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💬 Real-Time WebSocket Chat App
 
-## Getting Started
+A modern, responsive WebSocket chat interface built with **Next.js 13 App Router**, **TypeScript**, and **Tailwind CSS**. This project demonstrates real-time bi-directional communication using the WebSocket API, with a clean UI and smooth UX.
 
-First, run the development server:
+## 🚀 Features
+
+- 🔌 **WebSocket Integration** – Real-time communication using a live WebSocket server (`wss://ws.postman-echo.com/raw`).
+- 🟢 **Connection Status Indicator** – Displays connection state: Connected, Connecting, Error, or Disconnected.
+- 💬 **Dynamic Messaging** – Supports sending and receiving messages with automatic scroll-to-bottom behavior.
+- ✨ **Responsive UI** – Styled with Tailwind CSS for a modern and mobile-friendly layout.
+- 🔐 **Input Validation** – Prevents sending empty messages and disables input when disconnected.
+- 🧼 **Clean State Management** – Leveraging custom hooks (`useWebSocket`) and TypeScript interfaces for robust logic.
+
+## 🛠 Tech Stack
+
+- **Framework**: [Next.js 13 (App Router)](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **WebSocket Server**: [Postman Echo](https://www.postman.com/postman/workspace/postman-echo/overview)
+
+## 📦 Getting Started
+
+Clone the repo and run it locally:
 
 ```bash
+git clone https://github.com/YOUR_USERNAME/chat-app.git
+cd chat-app
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+chat-app/
+├── app/              # App router structure
+│   ├── layout.tsx    # Root layout
+│   └── page.tsx      # Chat UI page
+├── components/       # UI components
+│   ├── ChatWindow.tsx
+│   └── MessageInput.tsx
+├── hooks/            # Custom React hooks
+│   └── useWebSocket.ts
+├── styles/
+│   └── globals.css   # Tailwind base styles
+├── chat.d.ts         # TypeScript types
+├── tailwind.config.ts
+├── postcss.config.js
+├── tsconfig.json
+└── README.md         
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📌 Notes
+All stateful WebSocket logic is handled via a custom hook: useWebSocket.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Tailwind CSS utility classes are used directly in components.
 
-## Learn More
+App is tested and runs well on major modern browsers.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👨‍💻 About the Developer
+Hi! I’m Kachi, a frontend developer based in Nigeria. I’m passionate about building clean, responsive, and scalable user interfaces using modern web technologies. My goal is to craft seamless digital experiences and solve real-world problems through thoughtful design and efficient code.
