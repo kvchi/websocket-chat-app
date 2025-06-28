@@ -18,6 +18,21 @@ A modern, responsive WebSocket chat interface built with **Next.js 13 App Router
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **WebSocket Server**: [Postman Echo](https://www.postman.com/postman/workspace/postman-echo/overview)
 
+  ⚙️ Development Process & Debugging
+
+This project was initially scaffolded using **Kilo Code**, which generated the structure and business logic for the chat functionality.
+
+During development, I ran into significant issues with **Tailwind CSS** not working properly:
+
+- Tailwind was not correctly installed or configured in the generated project.
+- Despite editing config files (`postcss.config.js`, `tailwind.config.ts`) and trying common fixes, the styles were not loading.
+- After hours of debugging, I decided to start over with a clean Next.js project using the **Tailwind CSS template**.
+- I reinstalled Tailwind manually and ensured it was working.
+- I then copied the original generated code into this new project.
+
+This solved all the issues and allowed me to complete the task with a stable, fully styled app.  
+It was a strong reminder that while code generation tools can boost productivity, **understanding your tools and fixing issues manually is crucial** for building real-world applications.
+
 ## 📦 Getting Started
 
 Clone the repo and run it locally:
